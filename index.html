@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>API Adventure 🪂</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<div class="body">
+<canvas id="canvas"></canvas>
+<body>
+<section class="modal hidden">
+  <div class="flex">
+    <button class="btn-close">X</button>
+    <!-- i button modal text -->
+    <p>This is a Historical Weather Calculator! Enter in a city and date in history and the calculator will find the weather conditions for that specific date and time! If there was rain or snow on that day, the calculator will play a rain/snow animation with varying intensities based on the conditions of that day! You can also change the units from Fahrenheit to Celsius and vice versa with the button to the right of the "i" button. <br> <br> City locations are provided by the <a href="https://open-meteo.com/en/docs/geocoding-api">Open Metro Geocoding API</a> and the weather information is provided by the <a href="https://open-meteo.com/en/docs/historical-weather-api">Open Metro Historical Weather API</a> <br> <br> The rain and snow effect were based on this <a href="https://codepen.io/ruigewaard/pen/Podmea">rain effect by Max Ruigewaard</a> <br> <br> Historical Weather Calculator developed by Brandon Tubman <br> <br> <a href="http://linkedin.com/in/brandon-tubman-448baa261">LinkedIn</a></p>
+  </div>
+</section>
+<div class="overlay hidden"></div>  
+<button class="btn btn-open" id="info-button">i</button>
+<button class="Units" id="units-button" onclick="unitChange()">°F</button>
+<h1 class="header">Historical Weather Calculator</h1>
+<h1 class="degrees" id="degrees">--</h1>
+<h1 class="metrics" id="metrics"></h1>
+<h1 class="rain" id="rain">-- -- --</h1>
+<h1 class="snow" id="snow"></h1>
+<div class="inputcontainer">
+  <input type="text" id="cityInput" name="cityInput" placeholder="New York City"><br>
+    <!-- drop downs -->
+    <div class="select-date">
+      <select id="select-day">
+        <div class="dropdown-options">
+          <option value="1">1
+          <option value="2">2
+          <option value="3">3
+          <option value="4">4
+          <option value="5">5
+          <option value="6">6
+          <option value="7">7
+          <option value="8">8
+          <option value="9">9
+          <option value="10">10
+          <option value="11">11
+          <option value="12">12
+          <option value="13">13
+          <option value="14">14
+          <option value="15">15
+          <option value="16">16
+          <option value="17">17
+          <option value="18">18
+          <option value="19">19
+          <option value="20">20
+          <option value="21">21
+          <option value="22">22
+          <option value="23">23
+          <option value="24">24
+          <option value="25">25
+          <option value="26">26
+          <option value="27">27
+          <option value="28">28
+          <option value="29">29
+          <option value="30">30
+          <option value="31">31
+        </div>
+    </select>
+    <select id="select-month"></select>
+    <select id="select-year"></select>
+  </div>
+  <!-- slider -->
+  <h2 id="time">12 Pm</h2>
+  <input type="range" min="0" max="23" value="12" class="slider" id="slider"><br>
+  <button class="button" onclick="getClick(time)">Check Weather</button>
+</div>
+  <script src="script.js"></script>
+</div>
+</body>
+</html>

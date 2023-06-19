@@ -1,0 +1,230 @@
+body {
+  background-color: #212224;
+}
+
+/* i button modal styling */
+
+.modal {
+  margin: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 1.3rem;
+  position: absolute;
+  right: 23%;
+  min-height: 250px;
+  top: 20%;
+  background-color: #212224;
+  border-radius: 15px;
+  z-index: 2;
+}
+
+
+button {
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+}
+
+
+.modal p {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.btn-close {
+  padding: 0.5rem 0.7rem;
+  background: #424242;
+  color: white;
+  border-radius: 50%;
+}
+
+/* overlay for the i button modal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.header {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+.degrees {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+.inputcontainer {
+  width: 100%;
+  text-align: center;
+}
+
+#cityInput {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  width: 75%;
+  padding: 12px 20px;
+  border-radius: 50px;
+}
+
+/* slider styling */
+
+.slider {
+  -webkit-apperance: none;
+  appearance: none;
+  width: 75%;
+  height: 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right ,	darkblue,	darkblue, darkblue, darkblue, darkblue, darkblue, orange,skyblue, skyblue, skyblue,skyblue, skyblue, skyblue, skyblue,skyblue, skyblue, skyblue, skyblue, skyblue, orange, darkblue, darkblue, darkblue, darkblue);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-bottom: 5vh;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+}
+
+#time {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.button {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4;
+  background-color: #424242;
+  border-radius: 12px;
+}
+
+/* weatehr information displayed to the user */
+
+#metrics {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+#rain {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+#snow {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+#canvas {
+  left:0;
+  top:0;
+  position: absolute;
+  z-index: -1;
+}
+
+#select-day {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  background-color: #424242;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#select-month {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  background-color: #424242;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#select-year {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  background-color: #424242;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+#info-button {
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #424242;
+  border-radius: 50%;
+}
+
+#units-button {
+  font-weight: bold;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #424242;
+  border-radius: 50%;
+}
