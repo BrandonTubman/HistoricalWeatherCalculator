@@ -1,8 +1,3 @@
-/* 
-	Tell us about your project below!👇
-  This is a historical weather Calculator! I decided to us the Open Metro Historical Weather API because it gave a lot of useful information and I thought the concept was cool. The calculator acctually uses two APIs to get the coordinates of the city (Open Metro Geocoding API) the user enters and then puts those coordinates into the API which returns historical weather data, the app will animate rain and snow if there was any at that hour and date! The calculator will adjust the intensity of the rain/snow effects depending on how much rain/snow there was in the real world. The calculator also takes into account leap years in the dropdowns and populates the drop downs based on the date in which the calculator is used as not to allow users to request the API to predict the future. You can also change the units temperature units from F to C and vice versa using the button to the right of the i, the i button gives some information about the app and the links to the API's as well as a link to the rain animation I based the rain/snow animations on in this calculator. There is also a link to my LinkedIn profile as well. I put comments throughout the project to hopefully better outline how everything works. I think if I was to continue coding this project I would want to integrate forcasting into it so it can go into the future a little bit and another thing that might be cool to add would be adding cloud animations based on the clouds from the day in history as well as changing the background of the app based on the time of day and cloud cover simmilar to the ios weather app you see on iPhones.  
-*/
-
 // global variables
 
 let id = 0; 
